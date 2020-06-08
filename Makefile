@@ -20,10 +20,12 @@ flake:
 	${PYTHON} -m flake8 bedmap2
 
 black:
-	${PYTHON} -m black -t py37 bedmap2 tests
+	${PYTHON} -m black -t py37 bedmap2
+	${PYTHON} -m black -t py37 tests
 
 isort:
-	${PYTHON} -m isort --atomic -rc -y bedmap2 tests
+	${PYTHON} -m isort --atomic -rc -y bedmap2
+	${PYTHON} -m isort --atomic -rc -y tests
 
 mypy:
 	${PYTHON} -m mypy bedmap2

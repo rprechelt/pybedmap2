@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# ignore the bedmap2 data
+data/bed*
+tests/figures/*
+
 # C extensions
 *.so
 
