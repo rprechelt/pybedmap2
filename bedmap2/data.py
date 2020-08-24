@@ -116,7 +116,9 @@ def dataset(
     data = load_data(name)
 
     # and return the corresponding data indices
-    return data[ix, iy]
+    # NOTE the flip in ix and iy since the dataset
+    # is indexed by iy and then ix.
+    return data[iy, ix]
 
 
 def bed(*args: Any, **kwargs: Any) -> np.ndarray:
